@@ -1,0 +1,95 @@
+*{
+  box-sizing: border-box;
+}
+
+h2 { display:inline; }
+
+.interact{
+  align-items: center;
+  text-align: center;
+}
+.body {
+   background: #1dd878;
+}
+
+.rectangulos {
+  padding: 12px;
+  text-align: left;
+  background: #22aeca;
+  display: flex;
+  margin: 10px 0 10px;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #fff;
+  width: 70%;
+  flex-grow: 1;
+
+}
+
+.rectangulos:hover > .seccion >img{
+  transition: transform 0.5s;
+  transform: rotateY(180deg);
+
+}
+
+@media (min-width: 1200px) {
+ .main{
+   width: 1140px;
+ }
+}
+
+.main{
+
+  font-family: 'Arial', 'Poppins', sans-serif;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.recuadro .informacion {
+  text-align: justify;
+  margin-left: 10px;
+  width: 70%;
+}
+
+.fas {
+  align-items: center;
+  margin-top: 20%;
+  visibility: hidden;
+}
+
+.señores:hover ~ .rectangulos > .seccion >img{
+  transition: transform 0.5s;
+  transform: rotateY(180deg);
+
+}
+
+.rectangulos:hover > .fas{
+  visibility: visible;
+}
+
+.señores:hover ~ .rectangulos > .fas{
+  visibility: visible;
+}
+
+.rectangulos .seccion {
+  position: relative;
+  border-right: dashed #fff;
+}
+
+.rectangulos :nth-child(1){
+width:  30%;
+}
+.rectangulos :nth-child(2){
+width: 70%;
+}
+.rectangulos .seccion>img{
+  position: absolute;
+  width: 150px;
+  border-radius: 100px;
+  top: 10%;
+  left: 10%;
+}
+
