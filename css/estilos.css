@@ -9,13 +9,13 @@ h2 { display:inline; }
   text-align: center;
 }
 .body {
-   background: #1dd878;
+   background: #c2e7da;
 }
 
 .rectangulos {
   padding: 12px;
   text-align: left;
-  background: #1097b3;
+  background: #6290c3;
   display: flex;
   margin: 10px 0 10px;
   border-radius: 25px;
@@ -86,10 +86,11 @@ width:  30%;
 width: 70%;
 }
 .rectangulos .seccion>img{
-  position: absolute;
-  width: 150px;
-  border-radius: 100px;
-  top: 10%;
-  left: 10%;
+    position: relative;
+    width: 150px;
+    border-radius: 100px;
+    top: 8%;
+    left: 19%;
 }
+
 
